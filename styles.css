@@ -1,0 +1,34 @@
+#linkedin-stats-container {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.stats-box {
+  background-color: white;
+  border: 1px solid #0a66c2;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
+}
+
+.stat {
+  margin: 8px 0;
+}
+
+.stat-label {
+  font-weight: 600;
+  color: #0a66c2;
+  margin-right: 8px;
+}
+
+.stat-value {
+  color: #333;
+}
+
+.stats-box:hover {
+  border-color: #004182;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}

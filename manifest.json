@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "LinkedIn Job Stats Viewer",
+    "version": "1.0",
+    "description": "View hidden job posting statistics on LinkedIn",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://*.linkedin.com/jobs/view/*"],
+        "js": ["content.js"],
+        "css": ["styles.css"],
+        "run_at": "document_idle"
+      }
+    ],
+    "icons": {
+      "128": "icon128.png"
+    }
+  }
+  
