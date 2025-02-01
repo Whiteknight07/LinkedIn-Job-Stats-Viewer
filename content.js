@@ -142,10 +142,17 @@
       
     } catch (error) {
       console.error('[LinkedIn Stats Error]:', error);
-      const viewsElement = document.getElementById('views-count');
-      const appliesElement = document.getElementById('applies-count');
-      if (viewsElement) viewsElement.textContent = 'Error';
-      if (appliesElement) appliesElement.textContent = 'Error';
+      const container = document.getElementById('linkedin-stats-container');
+      if (container) {
+        container.innerHTML = `
+          <div class="error-message">
+            An error occurred: ${error.message}<br/>
+            Please ensure you are on a valid LinkedIn job page, for example: 
+            <a href="https://www.linkedin.com/jobs/view/4119480297/">Job View</a> or 
+            <a href="https://www.linkedin.com/jobs/search/?currentJobId=4132638831&origin=JOBS_HOME_JYMBII">Job Search</a>.
+          </div>
+        `;
+      }
     }
   }
 

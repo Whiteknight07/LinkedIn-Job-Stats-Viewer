@@ -32,3 +32,24 @@
   border-color: #004182;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
+
+/* Error message styling for graceful error handling */
+.error-message {
+  color: #b22222;
+  background-color: #ffe6e6;
+  border: 1px solid #b22222;
+  border-radius: 8px;
+  padding: 12px;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
+  font-size: 14px;
+  max-width: 300px;
+}
+
+.error-message a {
+  color: #0a66c2;
+  text-decoration: none;
+}
+
+.error-message a:hover {
+  text-decoration: underline;
+}
